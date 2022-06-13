@@ -52,14 +52,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./DataComponent": "./src/components/DataComponent",
-        "./Cart": "./src/components/Cart",
-        "./Search": "./src/components/Search",
-        "./Taps": "./src/components/Taps",
-        "./store": "./src/store",
-        "./VanillaCart": "./src/vanilla/VanillaCart",
-        "./VanillaSearch": "./src/vanilla/VanillaSearch",
-        "./VanillaTaps": "./src/vanilla/VanillaTaps",
+        "./ReactQueryProvider": "./src/components/ReactQueryProvider",
       },
       shared: {
         ...deps,

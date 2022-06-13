@@ -11,6 +11,8 @@ import Taps from "./components/Taps";
 import Cart from "./components/Cart";
 
 import "./index.css";
+// import ReactQueryProvider from "./components/ReactQueryProvider";
+// import ReactQueryData from "./components/ReactQueryData";
 
 const H3 = ({ children }) => (
   <Text fontSize="xl" mb={3} fontWeight="bold" textAlign="center">
@@ -19,28 +21,10 @@ const H3 = ({ children }) => (
 );
 
 const App = () => (
-  <ChakraProvider>
-    <SimpleGrid
-      columns={[1, 1, 3]}
-      spacing={10}
-      m={[1, 1, 6]}
-      templateColumns="1fr 3fr 1fr"
-      gap={1}
-    >
-      <div>
-        <H3>Search</H3>
-        <Search />
-      </div>
-      <div>
-        <H3>Taps</H3>
-        <Taps />
-      </div>
-      <div>
-        <H3>Cart</H3>
-        <Cart />
-      </div>
-    </SimpleGrid>
-  </ChakraProvider>
+  <div>hithere</div>
+  // <ReactQueryProvider>
+  //   <ReactQueryData />
+  // </ReactQueryProvider>
 );
 
 ReactDOM.render(<App />, document.getElementById("app"));
